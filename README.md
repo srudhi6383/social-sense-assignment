@@ -15,11 +15,8 @@ This project demonstrates a simple web application with a navigation bar and two
 npm run dev
 
 ### Deploy on Vercel
-- [Link] (https://social-wheat-mu.vercel.app/) :
-
-``` bash
 https://social-wheat-mu.vercel.app/
-```
+
 ### Screenshots
 ![Screenshot 2024-06-26 221932](https://github.com/srudhi6383/social-sense-assignment/assets/139768344/1750bb71-5fb6-4fc3-9eaf-c2534f35ec64)
 
