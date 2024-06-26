@@ -2,7 +2,7 @@
 import React from "react";
 import { useTheme } from "./context/ThemeProvider";
 import styled from "styled-components";
-import { Separator } from "../../components/Ui/separator";
+import { Separator } from "../Ui/separator";
 import Link from "next/link";
 import Image from "next/image";
 import profileImage from "../../assets/profile_pic_srudhi.jpeg";
