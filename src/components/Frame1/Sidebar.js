@@ -7,7 +7,7 @@ const SideBar = () => {
       <div class="h-full overflow-y-visible px-4 py-3 bg-gray-50 dark:bg-gray-800 w-full flex flex-col gap-5">
         <div className="w-full flex justify-center h-fit text-center items-center">
           <span class="text-xl font-semibold whitespace-nowrap dark:text-white">
-            SocialSense
+            Social Sense
           </span>
         </div>
 

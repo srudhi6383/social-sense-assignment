@@ -217,7 +217,7 @@ const ThemeSelector = () => {
           </div>
         </div>
       </div>
-      {/* <input type='color' onChange={handleColorChange}/> */}
+      {}
     </>
   );
 };

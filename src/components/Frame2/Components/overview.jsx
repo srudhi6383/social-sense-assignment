@@ -10,7 +10,7 @@ import {
   Legend,
 } from "chart.js";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../Ui/button";
 
 ChartJS.register(
   CategoryScale,
@@ -47,15 +47,15 @@ const Overview = () => {
       {
         label: "Projections",
         data: generateRandomData(20, 10),
-        backgroundColor: "rgba(75, 192, 192, 0.5)",
-        borderColor: "rgba(75, 192, 192, 1)",
+        backgroundColor: "rgba(220, 220, 220, 0.5)",
+        borderColor: "rgba(220, 220, 220, 1)",
         borderWidth: 1,
       },
       {
         label: "Actuals",
         data: generateRandomData(30, 10),
-        backgroundColor: "rgba(255, 205, 86, 0.5)",
-        borderColor: "rgba(255, 205, 86, 1)",
+        backgroundColor: "rgba(255, 165, 0, 0.5)",
+        borderColor: "rgba(255, 165, 0, 1)",
         borderWidth: 1,
       },
     ],
@@ -81,15 +81,15 @@ const Overview = () => {
         {
           label: "Projections",
           data: generateRandomData(20, 10),
-          backgroundColor: "rgba(75, 192, 192, 0.5)",
-          borderColor: "rgba(75, 192, 192, 1)",
+          backgroundColor: "rgba(220, 220, 220, 0.5)",
+          borderColor: "rgba(220, 220, 220, 1)",
           borderWidth: 1,
         },
         {
           label: "Actuals",
           data: generateRandomData(30, 10),
-          backgroundColor: "rgba(255, 205, 86, 0.5)",
-          borderColor: "rgba(255, 205, 86, 1)",
+          backgroundColor: "rgba(255, 165, 0, 0.5)",
+          borderColor: "rgba(255, 165, 0, 1)",
           borderWidth: 1,
         },
       ],
@@ -120,12 +120,7 @@ const Overview = () => {
   return (
     <div className="w-[80%] shadow-lg bg-white rounded-2xl p-3 grid">
       <Bar className="border-ye" data={data} options={options} />
-      <Button
-        className="mt-5 w-1/5 mx-auto bg-yellow-200 text-yellow-700"
-        onClick={handleUpdate}
-      >
-        Update Data
-      </Button>
+      {}
     </div>
   );
 };

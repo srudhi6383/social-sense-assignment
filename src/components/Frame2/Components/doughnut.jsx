@@ -12,7 +12,7 @@ const generateRandomData = (base, variance) => {
   );
 };
 
-const DonutChart = () => {
+const DoughnutChart = () => {
   const [data,setData] = useState({
     labels: [
       "15-25 Years Old",
@@ -23,17 +23,17 @@ const DonutChart = () => {
     datasets: [
       {
         label: "Customer Segmentations",
-        data: [84, 16, 30, 10], // Example data
+        data: [80, 15, 35, 15], // Example data
         backgroundColor: [
-          "rgba(255, 205, 86, 0.8)",
-          "rgba(255, 159, 64, 0.8)",
-          "rgba(54, 162, 235, 0.8)",
+          "rgba(255, 209, 86, 0.9)",
+          "rgba(172, 215, 23, 0.5)",
+          "rgba(165, 42, 42, 0.5)",
           "rgba(75, 192, 192, 0.8)",
         ],
         borderColor: [
           "rgba(255, 205, 86, 1)",
-          "rgba(255, 159, 64, 1)",
-          "rgba(54, 162, 235, 1)",
+          "rgba(173, 216, 230, 1)",
+          "rgba(165, 42, 42, 1)",
           "rgba(75, 192, 192, 1)",
         ],
         borderWidth: 1,
@@ -53,7 +53,7 @@ const DonutChart = () => {
       datasets: [
         {
           label: "Customer Segmentations",
-          data: generateRandomData(50,50), // Example data
+          data: generateRandomData(50,50),
           backgroundColor: [
             "rgba(255, 205, 86, 0.8)",
             "rgba(255, 159, 64, 0.8)",
@@ -98,14 +98,9 @@ const DonutChart = () => {
   return (
     <div className="w-4/5 h-fit bg-white rounded-2xl shadow-lg grid">
       <Doughnut data={data} options={options} width={"80%"} height={"100%"} />
-      <Button
-        className="mt-5 w-1/5 mx-auto bg-yellow-200 text-yellow-700"
-        onClick={handleUpdate}
-      >
-        Update Data
-      </Button>
+      
     </div>
   );
 };
 
-export default DonutChart;
+export default DoughnutChart;
